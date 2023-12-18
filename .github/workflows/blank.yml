@@ -30,9 +30,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker build -t ghcr.io/bar003/380-python-app:1.0 ./python
-      - run: docker push ghcr.io/bar003/380-python-app:228
+      - run: docker push ghcr.io/bar003/380-python-app:1.0
       - run: docker build -t ghcr.io/bar003/380-node-app:1.0 ./node 
-      - run: docker push ghcr.io/bar003/380-python-app:228
+      - run: docker push ghcr.io/bar003/380-python-app:1.0
   deploy:
     #The type of runner that the job will run on 
     runs-on: ubuntu-latest
